@@ -6,12 +6,14 @@ phases:
       golang: latest
 
   build:
-    commands: echo "Building the file"
-      go build main.go
+    commands:
+      - echo "Building the file"
+        go build main.go
 
   post_build:
-    commands: echo "Running tests"
-      go test ./... -v
+    commands:
+      - echo "Running tests"
+        go test ./... -v
 
 artifacts:
-  files: main
+  files: ./main
