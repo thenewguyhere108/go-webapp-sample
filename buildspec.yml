@@ -9,7 +9,7 @@ phases:
     command: echo "Building the file"
       go build main.go
 
-  test:
+  post_build:
     command: echo "Running tests"
       go test ./... -v
 
