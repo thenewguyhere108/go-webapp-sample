@@ -17,4 +17,7 @@ phases:
       - go test ./... -v
 
 artifacts:
-  files: main
+  files:
+    - main
+    - test.sh
+    - runapp.sh
