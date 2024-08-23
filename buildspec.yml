@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      golang: latest
+
+  build:
+    command: echo "Building the file"
+      go build main.go
+
+  test:
+    command: echo "Running tests"
+      go test ./... -v
+
+artifacts:
+  files: main
