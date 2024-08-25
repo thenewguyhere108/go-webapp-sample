@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /
+    destination: /opt/gowebapp/
 hooks:
   BeforeInstall:
     - location: ./runapp.sh

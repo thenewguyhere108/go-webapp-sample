@@ -1,6 +1,6 @@
 #!/bin/bash
 
 pwd
-ls
-chmod +x main
-main
+ls /opt/gowebapp/
+chmod +x ./opt/gowebapp/main
+/opt/gowebapp/main 
