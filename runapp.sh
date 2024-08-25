@@ -1,4 +1,6 @@
 #!/bin/bash
 
-chmod +x ./main
-./main
+pwd
+ls
+chmod +x main
+main
