@@ -8,6 +8,8 @@ phases:
   build:
     commands:
       - ls -la
+      - ls ../go
+      - pwd
       - echo "Building the file"
       - go build main.go
 
@@ -19,5 +21,5 @@ phases:
 artifacts:
   files:
     - main
-    - test.sh
+    - appspec.yml
     - runapp.sh

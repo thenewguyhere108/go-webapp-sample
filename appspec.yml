@@ -5,18 +5,6 @@ files:
     destination: /
 hooks:
   BeforeInstall:
-    - location: ./test.sh
-      timeout: 60
-      runas: root
-  AfterInstall:
-    - location: ./test.sh
-      timeout: 60
-      runas: root
-  ApplicationStart:
-    - location: /runapp.sh
-      timeout: 60
-      runas: root
-  ApplicationStop:
-    - location: /runapp.sh
+    - location: ./runapp.sh
       timeout: 60
       runas: root
