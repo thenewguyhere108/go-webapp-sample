@@ -8,10 +8,10 @@ phases:
   build:
     commands:
       - ls -la
-      - ls ../go
       - pwd
       - echo "Building the file"
       - go build main.go
+      - ls ../
 
   post_build:
     commands:
